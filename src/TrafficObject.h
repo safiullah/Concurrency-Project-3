@@ -37,6 +37,7 @@ protected:
 
 private:
     static int _idCnt; // global variable for counting object ids
+    static std::mutex _mtxCout; //static mutex added to for locking the shared access to console by threads
 };
 
 #endif
